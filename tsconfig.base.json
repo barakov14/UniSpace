@@ -19,7 +19,9 @@
       "@unispace/auth/login": ["libs/core/auth/feature-login/src/index.ts"],
       "@unispace/auth/register": [
         "libs/core/auth/feature-register/src/index.ts"
-      ]
+      ],
+      "@unispace/containers": ["libs/core/containers/src/index.ts"],
+      "@unispace/http": ["libs/core/http-client/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
