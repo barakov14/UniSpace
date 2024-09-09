@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@unispace/auth/data-access": ["libs/core/auth/data-access/src/index.ts"],
+      "@unispace/auth/login": ["libs/core/auth/feature-login/src/index.ts"],
+      "@unispace/auth/register": [
+        "libs/core/auth/feature-register/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
