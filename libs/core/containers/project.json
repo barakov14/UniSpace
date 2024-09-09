@@ -1,0 +1,37 @@
+{
+  "name": "containers",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core/containers/src",
+  "prefix": "unauthorized-user-layout",
+  "projectType": "library",
+  "tags": ["ui"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/core/containers/ng-package.json",
+        "tailwindConfig": "libs/core/containers/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/core/containers/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/core/containers/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/core/containers/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
