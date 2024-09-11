@@ -21,7 +21,9 @@
         "libs/core/auth/feature-register/src/index.ts"
       ],
       "@unispace/containers": ["libs/core/containers/src/index.ts"],
-      "@unispace/http": ["libs/core/http-client/src/index.ts"]
+      "@unispace/http": ["libs/core/http-client/src/index.ts"],
+      "@unispace/ui": ["libs/core/ui/src/index.ts"],
+      "@unispace/utils": ["libs/core/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

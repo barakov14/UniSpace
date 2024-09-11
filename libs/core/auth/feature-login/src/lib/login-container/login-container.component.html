@@ -1,1 +1,6 @@
-<p>login-container works!</p>
+<div class="container">
+  <us-login-form-ui
+    (onSubmit)="onSubmit($event)"
+    [isLoading]="isLoading()"
+  />
+</div>

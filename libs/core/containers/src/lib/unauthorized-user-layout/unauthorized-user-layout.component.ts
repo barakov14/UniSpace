@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'unauthorized-user-layout-unauthorized-user-layout',
+  selector: 'unauthorized-user-layout',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './unauthorized-user-layout.component.html',

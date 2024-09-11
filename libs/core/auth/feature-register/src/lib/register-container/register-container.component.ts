@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'us-register-register-container',
+  selector: 'us-register-container',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './register-container.component.html',

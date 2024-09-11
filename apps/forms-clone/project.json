@@ -22,7 +22,10 @@
             "input": "apps/forms-clone/public"
           }
         ],
-        "styles": ["apps/forms-clone/src/styles.scss"],
+        "styles": [
+          "apps/forms-clone/src/styles.scss",
+          "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+        ],
         "scripts": []
       },
       "configurations": {
