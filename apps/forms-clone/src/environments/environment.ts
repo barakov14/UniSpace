@@ -1,3 +1,4 @@
 export const environment = {
-  api_url: ''
+  app_name: 'Forms Clone',
+  api_url: 'http://localhost:3000/api/v1'
 }
