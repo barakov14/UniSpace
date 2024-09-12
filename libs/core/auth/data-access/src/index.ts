@@ -1,2 +1,5 @@
 export * from './lib/auth.service'
+export * from './lib/cookie-jwt.service'
 export * from './lib/dto/auth.dto'
+export * from './lib/factory/refresh-token.factory'
+export * from './lib/auth.interceptor'

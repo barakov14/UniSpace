@@ -12,6 +12,10 @@ export class CookieJwtService {
     this.setCookie('refreshToken', refreshToken, this.cookieExpireDays);
   }
 
+  isExistTokens(): boolean {
+    return !!this.getAccessToken() && !!this.getRefreshToken()
+  }
+
   getAccessToken(): string | null {
     return this.getCookie('accessToken')
   }

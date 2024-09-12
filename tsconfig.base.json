@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@forms-clone/core/ui": ["libs/forms-clone/core/ui/src/index.ts"],
+      "@uni-space/feature-forms-list": [
+        "libs/forms-clone/forms/feature-forms-list/src/index.ts"
+      ],
       "@unispace/auth/data-access": ["libs/core/auth/data-access/src/index.ts"],
       "@unispace/auth/login": ["libs/core/auth/feature-login/src/index.ts"],
       "@unispace/auth/register": [
@@ -22,7 +26,6 @@
       ],
       "@unispace/containers": ["libs/core/containers/src/index.ts"],
       "@unispace/http": ["libs/core/http-client/src/index.ts"],
-      "@unispace/ui": ["libs/core/ui/src/index.ts"],
       "@unispace/utils": ["libs/core/utils/src/index.ts"]
     }
   },

@@ -1,6 +1,6 @@
 import { DeepReadonly } from '@unispace/utils';
 
-export type CurrentUser = DeepReadonly<{
+export type UserCredentials = DeepReadonly<{
   user: {
     username: string;
 
@@ -10,8 +10,8 @@ export type CurrentUser = DeepReadonly<{
 
     email: string;
 
-    accessToken: string | undefined;
+    accessToken?: string;
 
-    refreshToken: string | undefined;
+    refreshToken?: string;
   }
 }>

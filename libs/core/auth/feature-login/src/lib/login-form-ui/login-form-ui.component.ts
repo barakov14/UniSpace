@@ -10,6 +10,7 @@ import { RouterLink } from '@angular/router';
 import { LoginRequest } from '@unispace/auth/data-access';
 import { APPLICATION_NAME } from '@unispace/utils';
 import { NzCardComponent } from 'ng-zorro-antd/card';
+import { NzAlertComponent } from 'ng-zorro-antd/alert';
 
 @Component({
   selector: 'us-login-form-ui',
@@ -28,6 +29,7 @@ import { NzCardComponent } from 'ng-zorro-antd/card';
     NzFormDirective,
     RouterLink,
     NzCardComponent,
+    NzAlertComponent,
   ],
   templateUrl: './login-form-ui.component.html',
   styleUrl: './login-form-ui.component.scss',
@@ -40,6 +42,7 @@ export class LoginFormUiComponent {
   onSubmit = output<LoginRequest>();
 
   isLoading = input<boolean>(false);
+  errors = input<string[]>([]);
 
   validateForm: FormGroup<{
     username: FormControl<string>;
